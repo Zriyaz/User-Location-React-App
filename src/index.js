@@ -13,7 +13,7 @@ import Spinner from "./Spinner"
     window.navigator.geolocation.getCurrentPosition(
       position=> this.setState({lat:position.coords.latitude}),
       err=> this.setState({errorMessage:err.message})
-      
+        
     )
   }
   renderContent(){

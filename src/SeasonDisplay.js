@@ -23,7 +23,7 @@ const getSeason=(lat,month)=>{
 
  const SeasonDisplay=(props)=>{
   const Season=getSeason(props.lat,new Date().getMonth())
-  const text=Season==='Winter'?"Burr it is cold!":"Let's hit the beach"
+  const text=Season==='Winter'?"Burr it is cold!":"Let's hit the beach!"
   const icon=Season==='Winter'?"sonwflake":"sun"
   return(
     <div className={` season-display ${Season}`}>
